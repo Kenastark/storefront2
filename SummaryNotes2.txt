@@ -47,7 +47,13 @@ LinkedIn: https://www.linkedin.com/in/mosh-hamedani/
 
 BUILDING RESTful APIs WITH DJANGO REST FRAMEWORK
 
-
+1 - Introduction
+In this Section we learn
+* Introduction to RESTful APIs 
+* Installing Django REST Framework
+* Creating API views
+* Creating serializers
+* Serializing and deserializing models 
 
 
 
