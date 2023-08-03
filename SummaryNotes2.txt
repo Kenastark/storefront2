@@ -26,13 +26,26 @@ SETTING UP GIT AND GITHUB
 
 git init - initialize a new Git repository
 git branch -m main - Used to rename 'master' to 'main'
+git remote add origin https://github.com/Kenastark/storefront2.git - 
+Connect the local repository to GitHub 
 git push -f origin main - Used to force push and override the remote repo. I did this due to the error i got about divergent branches
 git pull origin main - Used to pull changes from a specific remore branch 'main' in the remote repository called 'origin'. I did this because i added a README.md file and committed via the github interface which made remote to be ahead of my local by a single commit.
+git push --set-upstream origin main - Used to push local changes to remore and well as sets the remote tracking information to your local branch. After executing this command, your local branch will be linked to the remote main branch
 
 5 - Learning paths
 This is the URL to learning paths https://codewithmosh.com/p/learning-paths
 
+6 - Follow Me Around
+Twitter: https://twitter.com/moshhamedani
 
+Facebook: https://www.facebook.com/programmingwithmosh
+
+YouTube: https://www.youtube.com/user/programmingwithmosh
+
+LinkedIn: https://www.linkedin.com/in/mosh-hamedani/
+
+
+BUILDING RESTful APIs WITH DJANGO REST FRAMEWORK
 
 
 
