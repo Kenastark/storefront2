@@ -56,6 +56,228 @@ In this Section we learn
 * Serializing and deserializing models 
 
 
+2 - What are RESTful APIs
+
+Building an API is simply building an interface that client apps can use to get or save data.
+
+An API is going to have a bunch of endpoints (/products, /carts, /orders) for different purposes. Client apps send requests to these endpoints
+
+Representational State Transfer (REST) - It defines a bunch for rules for clients and servers to communicate over the web. Following these rules help build systems that are:
+1. Fast
+2. Scalable
+3. Reliable
+4. Easy to understand
+5. Easy to change
+
+An API that conforms to the following rules are RESTful:
+1. Resources
+2. Representations 
+3. HTTP Methods
+
+
+3 - Resources
+
+A resource is like an object (Product, Collection, Cart) in our application. They are available on the web and client applications can access them using a URL (Uniform Resource Locator)
+
+URL is a way to locate a Resource on the Web, it is a web address
+
+
+4 - Resource Representations
+
+We can identify a Resource using its URL. When we go to that URL, the server will return the Resource in a certain format or Representation such as HTML, XML, JSON none of which are the internal representation of a Resource on a server.
+
+On the Server, we identify a Resource using an Object or an instance of a python class. We return this object as either HTML, XML, JSON.  
+
+JSON - It is a notation for representating objects in JavaScript
+{
+    "name": "Kena",
+    "age": 24,
+    "is_online": True,
+    "employer": {},
+    "interests": []
+}
+
+5 - HTTP METHODS
+
+When building a REST API, you expose one or more endpoints for clients.
+
+Using HTTP Methods, the clients can tell the server what it wants to do with the resources
+GET - Getting a resource or collection of resource
+POST - for creating a resource POST /products
+PUT - Updating a resource
+PATCH - Updating part of it PATCH /products/1
+DELETE - Deleting a resource DELETE /products/1
+
+6 - Installing Django REST Framework
+
+It is a separate framework that sits on top on Django and makes it easy to build RESTful APIs
+
+`pipenv install djangorestframework`- To install the REST framework
+
+Then add it to the list of INSTALLED_APPS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
