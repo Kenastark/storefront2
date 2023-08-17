@@ -17,7 +17,7 @@ closed all running sessions. Open a new query window and import and run the SQL 
 python manage.py runserver - Used to start your server
 
 Create a new superuser for the admin panel
-        python manaage.py createsuperuser
+        python manage.py createsuperuser
 Username: admin
 Email: ikennaudeani@gmail.com
 Password: abc12345
@@ -116,13 +116,40 @@ It is a separate framework that sits on top on Django and makes it easy to build
 
 Then add it to the list of INSTALLED_APPS
 
+7 - Creating API views
+A view function is a function that takes a request and returns a response. The frontend App is where i practice the concepts.  
+
+i. You first create your views
+ii. Then you map your views to the App urls.py file
+iii. Then you add your base/main urls.py file that will direct the system to your projects url if it begins with a certain path
+
+
+In Django, we have two classes
+1. HttpResquest
+2. HttpResponse
+
+Django Rest Framework also comes with its own:
+i. request class
+ii. response class
+
+They are simplier and more powerful than the one that comes with django.
+
+Applying an `@api_view()` decorator to our view function, the request object will be an instance of the request class that comes with rest framework. It will replace the request object in django with the obbject that comes with the rest_framework.
+
+Browserable API makes it easy to test our API endpoints in the browser. We only see the browser API page when we hit our endpoints.
+
+Client apps like mobile apps hits our endpoints, it will not see our Browserable API but it will see the data in the response.
+
+ITEMS ON BROWSERABLE API PAGE
+Allow - tells us what Http Methods are supported at this endpoint 
+                OPTIONS - which we can use to see what operations or what methods are available
+                GET - 
+Content-Types - tells us the type of content in the response
+Vary - Is used for caching
 
 
 
-
-
-
-
+You can apply a Converter to your parameter in the url mapping
 
 
 
