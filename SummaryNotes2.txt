@@ -168,12 +168,16 @@ The Serializer objects are completely different from the objects in your model a
 
 9 - Serializing objects
 
+added a new setting to override django default settings so i can display unit_price as as decimal 
+
+from rest_framework import status - From this module, we have a lot of constants fore various HTTP status codes
+
+get_object_or_404 - Wraps the `try` block, the `except` exception handler  and returning a response with the 404 status code
 
 
+You can also pass a queryset into your serializer. set many=True as the second argument so that the serializer knows to iterate over this quersey and converts each product object to a dictionary
 
-
-
-
+10 - Creating Custom Serializer Fields
 
 
 
