@@ -179,6 +179,17 @@ You can also pass a queryset into your serializer. set many=True as the second a
 
 10 - Creating Custom Serializer Fields
 
+The objects that we return from our API, do not necessarily have to look like the objects in our application. The reason behind this, is that our data models are implementaiton details of our application. The implementation may change in the future. These changes should not be exposed to the outside world
+
+An API represents the interface of our application.
+
+In your API endpoints, you can add new fields that do not exists in your model classes.
+
+All API field types have an argument called `source`
+
+
+11 - Serializing Relationships 
+
 
 
 
