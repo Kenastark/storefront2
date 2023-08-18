@@ -147,14 +147,26 @@ Allow - tells us what Http Methods are supported at this endpoint
 Content-Types - tells us the type of content in the response
 Vary - Is used for caching
 
-
-
 You can apply a Converter to your parameter in the url mapping
 
+8 - Creating Serializers 
+
+JSON Renderer is a class in django rest_framework. It has a method called `render(dict)` that takes a dictionary object and returns a JSON object.
+
+A Serializer is an object that knows how to convert a model instance like a product object to a python dictionary.
+
+https://www.django-rest-framework.org/
+https://www.django-rest-framework.org/api-guide/fields/#core-arguments
+                Documentation for Serializers
 
 
+An API should return external representation of an object.
 
+You need an Internal and External representation of an object to avoid exposing sensitive information.
 
+The Serializer objects are completely different from the objects in your model and so the field names do not have to match.
+
+9 - Serializing objects
 
 
 
