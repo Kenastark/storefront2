@@ -187,6 +187,9 @@ In your API endpoints, you can add new fields that do not exists in your model c
 
 All API field types have an argument called `source`
 
+.SerializerMethodField - Means we are going to define a method and the method will return th value for the field
+
+
 
 11 - Serializing Relationships 
 
