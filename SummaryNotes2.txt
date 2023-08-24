@@ -193,12 +193,20 @@ All API field types have an argument called `source`
 
 11 - Serializing Relationships 
 
-2. you can serialize an object using .StringRelatedField() but you must use .select_related('collection').all() in your views function
+They are four ways to Serialize a Relationship
+1. Using Primary key
 
-3. You can serialize using a nested object
+2. String Values - you can serialize an object using .StringRelatedField() but you must use .select_related('collection').all() in your views function
 
-4. Using hyperlink to an Endpoint for viewing that collection
+3. Nested Objects - You can serialize using a nested object. You create a new class object and then nest it (Call it) in one of the fields in your serializer
+
+4. Hyperlink - Using hyperlink to an Endpoint for viewing that collection
 view_name - used for generating hyperlinks
+
+
+
+12 - Model Serializers 
+
 
 
 
