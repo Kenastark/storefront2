@@ -12,7 +12,10 @@ class ProductSerializer(serializers.Serializer):
     price = serializers.DecimalField(max_digits=6, decimal_places=2, source='unit_price')
     #SerializerMethodField a method will be defined and will return the result for this field
     price_with_tax = serializers.SerializerMethodField(method_name='calculate_tax')
-    collection = CollectionSerializer()
+    collection = serializers.HyperlinkedRelatedField(
+        queryset =Collection.objects.all(),
+        view_name='collection-detail'
+    )
 
     #type annotation is used to enable intellisense
     def calculate_tax(self, product: Product):
