@@ -222,7 +222,7 @@ __all__ - Can be used instead of an array containing the fields. It means select
 
 13 - Deserializing Objects 
 
-
+It is opposite of serialization. It happens when you recieve data from the client
 
 
 
