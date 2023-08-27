@@ -6,8 +6,6 @@ from rest_framework import status
 from .models import Product
 from .serializers import ProductSerializer
 
-
-
 # Create your views here.
 @api_view()
 def product_list(request):

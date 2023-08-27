@@ -208,6 +208,13 @@ view_name - used for generating hyperlinks
 12 - Model Serializers 
 
 
+If tomorrow we want to change the validation rules for the fields, we have to change it in the serializer and in the model class.
+
+
+Using the model serializer, we can quickly create a serializer without all the duplication in the model class and in the serializer.
+
+By dafault, model serializers use primary key related fields
+
 
 
 
