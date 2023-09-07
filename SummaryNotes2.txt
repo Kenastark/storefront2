@@ -225,10 +225,15 @@ __all__ - Can be used instead of an array containing the fields. It means select
 It is opposite of serialization. It happens when you recieve data from the client
 
 
+14 - Data Validation
+
+Before we can access the validated data attribute, we first have to validate the data else we get an exception
 
 
+raise_exception - Use it to write cleaner code. If we get invalid data, djangorestframework will automatically return a response with a status of 400 and include validation errors in the body of the response
 
 
+15 - Saving Objects 
 
 
 
